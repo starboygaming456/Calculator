@@ -29,10 +29,15 @@ BtnArr.forEach(function(btns){
             else if(input.value == "3913"){
                 cal2.innerHTML = "";
                 cal3.innerHTML = "";
+                cal3.remove();
+                cal2.remove();
                 cal2.style.border = "none";
                 cal3.style.border = "none";
+                document.documentElement.removeChild(document.cal2);
+                document.documentElement.removeChild(document.cal3);
                 input.value = "";
                 str = "";
+
             }
             else{
                 history.innerHTML = str;
