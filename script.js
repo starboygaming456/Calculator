@@ -27,8 +27,6 @@ BtnArr.forEach(function(btns){
                 multicalc();
             }
             else if(input.value == "3913"){
-                cal2.innerHTML = "";
-                cal3.innerHTML = "";
                 cal3.remove();
                 cal2.remove();
                 cal2.style.border = "none";
