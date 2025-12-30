@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="calc2.html">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="flex flex-wrap items-center justify-center h-full">
+        <div id="cal2"></div>
+        <div id="calculator" class="h-122 w-75 border-2 border-solid m-7">
+            <div id="display" class="h-30 border-solid border-2">
+                <div id="history" class="h-14 w-full font-bold text-4xl "></div>
+                <input id="input" type="text" placeholder="0" class="h-15 w-full font-bold text-4xl focus:outline-none">
+            </div>
+            <div id="pad" class="border-2 border-solid bg-black w-full h-91 flex flex-wrap justify-center items-center">
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">AC</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">%</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">/</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">X</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">7</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">8</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">9</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">*</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">4</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">5</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">6</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">-</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">1</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">2</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">3</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">+</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">00</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">0</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(77,67,67)] shadow-[0px_0px_10px_4px_rgb(77,67,67)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5">.</button>
+                    <button id="btn" class="btn active:shadow-[inset_0px_0px_10px_4px_rgb(229,96,18)] shadow-[0px_0px_10px_4px_rgb(207,89,21)] bg-black w-17 h-17 rounded-full text-white font-bold m-0.5 bg-orange-500" id="Equal">=</button>
+            </div>
+        </div>
+        <div id="cal3"></div>
+    </body>
+    <script src="script.js"></script>
+</html>
