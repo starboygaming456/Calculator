@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(18, 17, 17);
+}
+
+#calculator{
+    position:absolute;
+    border: 1px black solid;
+    width: 60vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 25px;
+    /* background-color: rgb(40, 38, 38); */
+    box-shadow: inset 0px 0px 15px 2px;
+}
+
+
+#display{
+    height: 20vmin;
+    /* border: solid black 1px; */
+    border-bottom: solid black 1px;
+}
+#pad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: pink; */
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 13vmin;
+    width: 13vmin;
+    margin: 3px;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    font-size: 4vmin;
+    font-family: arial;
+}
+.button:active{
+    box-shadow: inset 0px 0px 20px 0px black;
+}
+
+#equal{
+    background-color: rgb(255, 140, 0);
+}
+
+#history{
+    width: 100%;
+    background-color: red;
+    height: 10vmin;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    font-size: 4vmin;
+    font-family:  arial;
+}
+
+#input{
+    width: 100%;
+    border: none;
+    height: 10vmin;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 4vmin;
+}
+input:focus {
+  outline: none;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    #calculator{
+        width: 87vmin;
+    }
+    .button{
+        height: 19vmin;
+        width: 19vmin;
+        font-size: 6vmin;
+    }
+    #display{
+        height: 45vmin;
+    }
+    #history{
+        height: 22vmin;
+        font-size: 8vmin;
+    }
+    #input{
+        height: 22vmin;
+        font-size: 8vmin;
+    }
+}
